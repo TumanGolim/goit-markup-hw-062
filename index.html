@@ -24,6 +24,11 @@
         <a class="logo link" href="./index.html"
           >Web<span class="logo__part2">Studio</span></a
         >
+        <div class="burger__menu">
+          <div class="burger__line"></div>
+          <div class="burger__line"></div>
+          <div class="burger__line"></div>
+        </div>
         <ul class="nav__item list">
           <li>
             <a class="nav__link Studio" href="./index.html">Studio</a>
@@ -238,6 +243,7 @@
         </ul>
       </section>
     </main>
+
     <footer class="footer__bg">
       <div class="container__footer">
         <div class="footer__text_container">
@@ -288,74 +294,47 @@
         </div>
       </div>
     </footer>
+
     <div class="block">
       <div class="backdrop is-hidden" data-modal>
-        <div></div>
-        <p class="moda__par">Leave your contacts and we will call you back</p>
-        <form class="">
-          <div class="moda">
-            <label class="block__label" for="user-name">Name</label>
-            <div class="moda__input">
-              <input type="text" id="user-name" name="user-name" />
-              <svg class="block__svg" width="18" height="24">
-                <use href="./images/sprite.svg#symbol-id"></use>
-              </svg>
-            </div>
-          </div>
-          <div class="moda">
-            <label class="block__label" for="user-phone">Phone</label>
-            <div class="moda__input">
-              <input type="tel" id="user-phone" name="user-phone" />
-              <svg class="block__svg" width="18" height="24">
-                <use href="./images/sprite.svg#symbol-id"></use>
-              </svg>
-            </div>
-          </div>
-          <div class="moda">
-            <label class="block__label" for="user-email">Email</label>
-            <div class="moda__input">
-              <input type="email" id="user-email" name="user-email" />
-              <svg class="block__svg" width="18" height="24">
-                <use href="./images/sprite.svg#symbol-id"></use>
-              </svg>
-            </div>
-          </div>
-          <div class="moda__comment">
-            <label class="block__label" for="user-comment">Comment</label>
-            <textarea
-              name="user-comment"
-              id="user-comment"
-              placeholder="Text input"
-              class="moda__textarea"
-            ></textarea>
-          </div>
-          <div class="moda__chec">
-            <input
-              class="imput__chec visually-hidden"
-              id="user-privacy"
-              type="checkbox"
-              value="true"
-              name="user-privacy"
-            />
-            <label class="lable__chec" for="user-privacy">
-              I accept the terms and conditions of the
-              <span class="moda__spam">
-                <svg width="10" height="8">
-                  <use href="./images/sprite.svg#symbol-id"></use>
-                </svg>
-              </span>
-              <a class="privacy-policy" href="/privacy-policy"
-                >Privacy Policy</a
-              >
+        <div class="moda">
+          <button class="clouse" data-modal-close>&times;</button>
+          <h3 class="moda__h">Leave your contacts and we will call you back</h3>
+          <ul class="moda__reg">
+            <li class="moda__p">
+              <p class="moda__text">Name</p>
+              <form class="moda__name"></form>
+              <input class="moda__name" name="username" placeholder="" />
+            </li>
+            <li class="moda__p">
+              <p class="moda__text">Phone</p>
+              <input class="moda__phone" name="Phone" placeholder="" />
+            </li>
+            <li class="moda__p">
+              <p class="moda__text">Email</p>
+              <a href="" class=""></a>
+              <input class="moda__email" name="email" placeholder="" />
+            </li>
+            <li class="moda__c">
+              <p class="moda__text">Comment</p>
+              <textarea
+                class="moda__comment"
+                name="comment"
+                rows="6"
+                placeholder="   Text imput"
+              ></textarea>
+            </li>
+          </ul>
+          <div class="moda__frem">
+            <label class="moda__chect">
+              <input class="moda__chec" type="checkbox" />
+              I accept the terms and conditions of the Privacy Policy
             </label>
           </div>
-          <button class="send">
-            <span class="text__send">Send</span>
-          </button>
-        </form>
+          <button class="send">Send</button>
+        </div>
       </div>
     </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>
-
