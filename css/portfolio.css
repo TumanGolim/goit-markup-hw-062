@@ -507,7 +507,6 @@ body {
   line-height: 24px;
   letter-spacing: 0.48px;
 }
-/* END FOOTER SECTION */
 /* New styles for burger menu */
 .burger__menu {
   display: none;
@@ -516,6 +515,12 @@ body {
   width: 24px;
   height: 20px;
   cursor: pointer;
+}
+.burger__line {
+  width: 100%;
+  height: 2px;
+  background-color: var(--dark);
+  transition: background-color 0.3s ease;
 }
 @media (min-width: 320px) and (max-width: 768px) {
   .nav__item {
@@ -540,5 +545,62 @@ body {
   .container {
     width: 100%;
     gap: 0;
+  }
+  /* filters */
+  .filters {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-left: 16px;
+  }
+  /* row */
+  .row {
+    flex-direction: column;
+  }
+  /* footer__bg */
+  .footer__bg {
+    height: 664px;
+  }
+  .container__footer {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+  .footer__text_container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .logo-footer {
+    display: block;
+    text-align: center;
+  }
+  .footer__social__container {
+    text-align: center;
+  }
+  .icon-cont-footer {
+    display: inline-flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 16px;
+  }
+  .subscribe-heading {
+    text-align: center;
+  }
+  .email__imput {
+    width: 100%;
+  }
+  .foter__email {
+    flex-direction: column;
+  }
+  .foter__imput {
+    width: 100%;
+  }
+  .foter__lable {
+    width: auto;
+    margin: 0 15px;
+  }
+  .footer__subscribe {
+    display: flex;
+    margin: 0 auto;
   }
 }
